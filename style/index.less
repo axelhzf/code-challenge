@@ -1,1 +1,45 @@
 @import (inline) "~codemirror/lib/codemirror.css";
+@import (inline) "~codemirror/theme/tomorrow-night-bright.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #ccc;
+  font: 12px Menlo, "DejaVu Sans Mono", "Lucida Console", monospace;
+}
+
+.app {
+  display: flex;
+}
+
+.code-editor {
+  flex: 1;
+  order: 1;
+}
+
+.validator-result {
+  flex: 1;
+  order: 2;
+}
+
+.code-editor, .validator-result {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 5px;
+}
+
+.validator-result {
+
+  .summary {
+    list-style: none;
+
+    li {
+      display: inline-block;
+    }
+
+  }
+
+}
